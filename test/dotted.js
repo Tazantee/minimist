@@ -42,6 +42,6 @@ test('dotted notation with array in square bracket syntax', function (t) {
 	t.ok(Array.isArray(argv.a[1]));
 	t.equal(argv.a[1][0].foo, 'x');
 	t.notOk(1 in argv.a[1]);
-	t.equal(argv.a[1][2].foo, 42);
+	t.equal(argv.a[1][2], 42);
 	t.end();
 });
